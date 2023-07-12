@@ -35,6 +35,22 @@ img {
 }
 
 .cat-info {
+  text-align: left;
+  width: 500px;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.img-cat {
+  width: 100%;
+  background: #fff;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
 }
 
 .breed-select {
@@ -43,4 +59,9 @@ img {
   margin: 0 auto;
   margin-bottom: 40px;
   width: 600px !important;
+}
+
+.info {
+  justify-content: center;
+  display: flex;
 }
