@@ -1,8 +1,11 @@
+//Импорт библиотек
 import axios from "axios";
 import Notiflix from 'notiflix';
 
+//ключ
 axios.defaults.headers.common["x-api-key"] = "live_75uKdfWmTBuP8ukRMUMUJCO8KQISCBd02MHAphMUMEzlHonW5muljdtCNZFts9oC";
 
+//функция запроса на каталог котов
 export function fetchBreeds() {
     return axios
     .get("https://api.thecatapi.com/v1/breeds")
@@ -12,6 +15,7 @@ export function fetchBreeds() {
   });
 }
 
+//функция запроса на породу из котокаталога
 export function fetchCatByBreed(breedId) {
     return axios
     .get(`https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}`)
