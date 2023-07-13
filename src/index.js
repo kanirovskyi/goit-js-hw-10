@@ -54,6 +54,11 @@ function renderCat() {
     fetchCatByBreed(breedId)
         .then(dataCat => {
 
+            if (dataCat.length === 0) {
+                hideLoader();
+                return Notiflix.Notify.warning(`Sorry, nothing was found for the breed. You may be interested in other cat breeds.`);  
+            }
+
             hideLoader()
             showCatinfo()
 
