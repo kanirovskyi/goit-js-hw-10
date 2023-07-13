@@ -40,8 +40,19 @@ img {
   background: #fff;
   border-radius: 4px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px;
   font-size: 12px;
+  transition: all 0.2s;  */
+}
+
+.cat-descr {
+  text-align: left;
+  width: 500px;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 14px;
   transition: all 0.2s;
 }
 

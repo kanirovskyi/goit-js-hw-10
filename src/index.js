@@ -68,14 +68,15 @@ function renderCat() {
             <img class="img-cat" src="${catImg}" width="400" height="400" loading="lazy">
             <div class="info">
             <h1 class="cat-name">${catName}</h1>
-            <p class="cat-info"><b>Description: </b>${catDescr}</p>
-            <p class="cat-info"><b>Temperament: </b>${catTemp}</p>
+            <p class="cat-descr"><b>Description: </b>${catDescr}</p>
+            <p class="cat-descr"><b>Temperament: </b>${catTemp}</p>
             </div>
             `
             breedCatinfo.innerHTML = cat;
         })
         .catch(error => {
 
+            hideCatinfo()
             hideLoader()
             
             Notiflix.Notify.failure(error);
